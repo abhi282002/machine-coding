@@ -66,3 +66,31 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.boxes {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: fit-content;
+  gap: 20px;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.visible {
+  cursor: pointer;
+  border: 1px solid black;
+}
+.hidden {
+  cursor: initial;
+  opacity: 0;
+}
+
+.selected {
+  background-color: #0bcc59;
+  cursor: not-allowed;
+}
